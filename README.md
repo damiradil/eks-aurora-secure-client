@@ -20,6 +20,7 @@ tip: leave db_engine_version = null to avoid version drift
 
 ### 3) provision
 `terraform init`
+`terraform plan`
 `terraform apply`
 
 ### 4) kubeconfig for kubectl
