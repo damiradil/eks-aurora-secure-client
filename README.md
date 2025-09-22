@@ -10,8 +10,8 @@ AWS CLI logged in (e.g., aws configure).
 
 ## Quick start
 ### 1) clone and enter repo
-git clone https://github.com/<you>/<repo>.git
-cd <repo>
+git clone repo link
+cd to repo folder
 
 ### 2) set your inputs
 cp terraform.tfvars.example terraform.tfvars
