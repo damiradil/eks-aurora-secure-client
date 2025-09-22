@@ -39,7 +39,9 @@ POD=$(kubectl --context helium-eks-us-east-2 -n db-client get pods -l job-name=p
 
 Expected logs include a timestamp from SELECT now();.
 
-## Rerun the client job
+## (Optional) Rerun the client job
+The db-client Job runs once and then completes.  
+If you want to re-run the test query:
 `kubectl --context helium-eks-us-east-2 -n db-client delete job psql-now --ignore-not-found`
 `terraform apply -target=module.db_client`
 
