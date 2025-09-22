@@ -1,0 +1,25 @@
+project_name = "helium"        
+aws_region   = "us-east-2" 
+
+# EKS
+eks_endpoint_public_access = true
+
+# Replace with your IP to lock down API access
+eks_public_access_cidrs    = ["YOUR.IP.ADDR.HERE/32"] 
+
+# VPC
+vpc_cidr = "10.20.0.0/16"
+az_count = 2
+
+# Aurora
+db_engine_version   = "15.10"
+db_name             = "appdb"
+db_master_username  = "app_admin"
+aurora_min_acu      = 0.5
+aurora_max_acu      = 1
+
+# Tags
+tags = {
+  Environment = "take-home-assignment"
+  ManagedBy   = "terraform"
+}

@@ -1,0 +1,15 @@
+
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+terraform.tfvars
+
+*.pkg
+*.zip
+
+*.log
+.DS_Store
+.idea/
+.vscode/
